@@ -22,7 +22,7 @@ struct custom_JPEG_data {
 
 int main(int argc, char ** argv) {
 
-    if (argc != 2 || argc != 4) {
+    if (argc != 2 && argc != 4) {
         std::cerr <<  "Usage: ./main path/to/file.jpg [outfile.txt dimensions]" << std::endl;
         return 1;
     }
